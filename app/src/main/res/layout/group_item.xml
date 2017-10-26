@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_shopcart_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#DFE6EE"
+            android:id="@+id/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <CheckBox
+                android:id="@+id/iv_item_shopcart_shopselect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/tv_item_shopcart_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="宝儿家服装"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/jianbian"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/tv_item_shopcart_clothname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="穿秋装情侣字母徽章风衣"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <CheckBox
+                    android:id="@+id/tv_item_shopcart_clothselect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_item_shopcart_cloth_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_item_shopcart_cloth_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥185"
+                        android:textColor="#f00"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        >
+                    </LinearLayout>
+                    <com.bwie.shopcart.AmountView
+                        android:id="@+id/av"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"></com.bwie.shopcart.AmountView>
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--&gt;-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/iv_group_minus"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@mipmap/shopcart_minus_grey"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/et_item_shopcart_cloth_num"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="5dp"-->
+                            <!--android:paddingBottom="2dp"-->
+                            <!--android:paddingLeft="10dp"-->
+                            <!--android:paddingRight="10dp"-->
+                            <!--android:paddingTop="2dp"-->
+                            <!--android:text="1"-->
+                            <!--android:textColor="#000" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/iv_group_add"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@mipmap/shopcart_add_red"-->
+                            <!--android:layout_marginLeft="5dp"-->
+                            <!--/>-->
+
+
+
+                    <!--</LinearLayout>-->
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/jianbian"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_item_shopcart_cloth_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/jianbian"
+        />
+
+</LinearLayout>
